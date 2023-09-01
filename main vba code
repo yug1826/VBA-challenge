@@ -1,7 +1,5 @@
 Sub StockAnalysis()
 
-
-
     ' '-------------------------------
     ' Declare 1D variables
     ' '-------------------------------
@@ -24,8 +22,6 @@ Sub StockAnalysis()
     ' Loop through each sheet
     ' '---------------------
     For Each ws In Worksheets
-    
-        
         
         ' '------------------------------------------
         ' Sort the sheet first by Column A then by Column B
@@ -37,8 +33,7 @@ Sub StockAnalysis()
              .Header = xlYes
              .Apply
         End With
-        
-       
+    
         
         ' '-------------------------------
         ' Populate headers and table labels
@@ -53,8 +48,7 @@ Sub StockAnalysis()
         ws.Range("O4") = "Greatest Total Volume"
         ws.Range("P1") = "Ticker"
         ws.Range("Q1") = "Value"
-        
-      
+     
         
         ' '-------------------------------
         ' Declare a new 2D array of arbitrarily large size and four columns
